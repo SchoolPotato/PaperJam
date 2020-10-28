@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Form</title>
     <link rel="stylesheet" href="CSS/form.css">
+    <meta name="author" content="Alex Welton">
+    <meta name="description" content="Form for buying Music Printers, made for a school project.">
 </head>
 <body>
     <form>
@@ -39,12 +41,19 @@
             <label for="user.card.expires">Expiration Date: </label>
             <input type="date" id="user.card.expires" name="user.card.expires">
             <label for="user.zip"> Zip Code: </label>
-            <input type="text" id="user.zip" name="user.zip">
+            <input type="text" id="user.zip" name="user.zip"><br>
+            <label for="user.tel"> Phone Number: </label>
+            <input type="tel" id="user.tel" name="user.tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
         </fieldset>
 
         <fieldset id="product">
             <legend>Product</legend>
-            
+            <fieldset id="subproduct1">
+                <legend>Printer</legend>
+            </fieldset>
+            <fieldset id="subproduct2">
+                <legend>Paper</legend>
+            </fieldset>
         </fieldset>
     </form>
 </body>
