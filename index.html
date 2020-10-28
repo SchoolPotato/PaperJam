@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="CSS/form.css">
+</head>
+<body>
+    <form>
+        <fieldset id="contacts">
+        <legend>Contacts</legend>
+            <label for="user.name">Full Name: </label>
+            <input type="text" id="user.name" name="user.name">
+            <label for="user.address"> Address: </label>
+            <input type="text" id="user.address" name="user.address"><br>
+            <label for="CardType">Card Type: </label>
+            <select name="CardType" id="CardType">
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">Master Card</option>
+                <option value="AmericanExpress">American Express</option>
+                <option value="Discover">Discover</option>
+            </select>
+            <label for="Country"> Country: </label>
+            <select name="Country">
+                <option value="One">One</option>
+                <option value="Two">Two</option>
+                <option value="Three">Three</option>
+                <option value="Four">Four</option>
+            </select><br>
+            <label for="user.card.number">Card Number: </label>
+            <input type="text" id="user.card.number" name="user.card.number" maxlength="16">
+            <label for="user.state"> State/Province: </label>
+            <input type="text" id="user.state" name="user.state"><br>
+            <label for="user.card.secnum">Security Number: </label>
+            <input type="text" id="user.card.secnum" name="user.card.secnum" maxlength="3">
+            <label for="user.city"> City: </label>
+            <input type="text" id="user.city" name="user.city"><br>
+            <label for="user.card.expires">Expiration Date: </label>
+            <input type="date" id="user.card.expires" name="user.card.expires">
+            <label for="user.zip"> Zip Code: </label>
+            <input type="text" id="user.zip" name="user.zip">
+        </fieldset>
+
+        <fieldset id="product">
+            <legend>Product</legend>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
