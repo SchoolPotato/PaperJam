@@ -8,3 +8,17 @@ table{
     border: double white;
     
 }
+
+a{
+    color: red;
+    display: grid;
+    justify-content: center;
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
+}
+a:hover{
+    color: orange;
+}
+a:visited{
+    color:teal;
+}
