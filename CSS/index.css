@@ -42,6 +42,8 @@ a:visited{
 .flex-item{
     max-width: 33%;
     height: auto;
+    margin: 0.2rem;
+    border: 0.2rem lightskyblue solid;
 }
 
 iframe{
