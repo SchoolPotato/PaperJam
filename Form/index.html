@@ -11,17 +11,44 @@
 <body>
     <img id="logo" src="../Images/logo.png">
     <fieldset id="navbar" style="margin-top: 5px; margin-bottom: 5px;">
-        <a id="navbar" href="../About/index.html" target="_blank">About</a>
+        <a id="navbar" href="../About/index.html">About</a>
         <a id="navbar" href="../Form/index.html">Purchase</a>
         <a id="navbar" href="../index.html">Home</a>
-        <a id="navbar" href="../Gallery/index.html" target="_blank">Gallery</a>
+        <a id="navbar" href="../Gallery/index.html">Gallery</a>
     </fieldset>
     <form id="orderform">
         <fieldset id="header">
                 <h1><span id="FirstLetter">Order Form</span></h1>
                 <h2>"Buy our stuff!"</h2>
+            <fieldset id="product">
+                <legend>Product</legend>
+                <fieldset id="subproduct1">
+                    <legend>Printer</legend>
+                    <input type="radio" id="LargePrinter" name="PrinterType" value="LargerPrinter">
+                    <label for="LargePrinter">Large Printer ($59.99)</label><br>
+                    <input type="radio" id="SmallPrinter" name="PrinterType" value="SmallPrinter">
+                    <label for="SmallPrinter">Small Printer ($39.99)</label><br>
+                    <br>
+                    <input type="checkbox" id="Deluxe" name="Deluxe">
+                    <label for="Deluxe">Deluxe (prints double-sided)</label>
+                </fieldset><br>
+                <fieldset id="subproduct2">
+                    <legend>Paper</legend>
+                    <input type="radio" id="HalfLetter" name="PaperSize" value="HalfLetter">
+                    <label for="HalfLetter">Half Letter (5.5 x 8.5 in, $2.25 per pack)</label><br>
+                    <input type="radio" id="Letter" name="PaperSize" value="Letter">
+                    <label for="Letter">Letter (8.5 x 11.0 in, $4.99 per pack)</label><br>
+                    <input type="radio" id="Legal" name="PaperSize" value="Legal">
+                    <label for="Legal">Legal (8.5 x 14.0 in, $5.99 per pack)</label><br>
+                    <input type="radio" id="None" name="PaperSize" value="None">
+                    <label for="None">No Paper</label><br>
+                    <br>
+                    <label for="PaperQuantity">Quantity: </label>
+                    <input type="text" id="PaperQuantity" name="PaperQuantity" maxlength="3">
+                </fieldset>
+            </fieldset><br>
             <fieldset id="contacts">
-            <legend>Contacts</legend>
+                <legend>Contacts</legend>
                 <label for="user.name">Full Name: </label>
                 <input type="text" id="user.name" name="user.name">
                 <label for="user.address"> Address: </label>
@@ -296,34 +323,6 @@
                 <input type="text" id="user.zip" name="user.zip"><br>
                 <label for="user.tel"> Phone Number: </label>
                 <input type="tel" id="user.tel" name="user.tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-            </fieldset><br>
-
-            <fieldset id="product">
-                <legend>Product</legend>
-                <fieldset id="subproduct1">
-                    <legend>Printer</legend>
-                    <input type="radio" id="LargePrinter" name="PrinterType" value="LargerPrinter">
-                    <label for="LargePrinter">Large Printer ($59.99)</label><br>
-                    <input type="radio" id="SmallPrinter" name="PrinterType" value="SmallPrinter">
-                    <label for="SmallPrinter">Small Printer ($39.99)</label><br>
-                    <br>
-                    <input type="checkbox" id="Deluxe" name="Deluxe">
-                    <label for="Deluxe">Deluxe (prints double-sided)</label>
-                </fieldset><br>
-                <fieldset id="subproduct2">
-                    <legend>Paper</legend>
-                    <input type="radio" id="HalfLetter" name="PaperSize" value="HalfLetter">
-                    <label for="HalfLetter">Half Letter (5.5 x 8.5 in, $2.25 per pack)</label><br>
-                    <input type="radio" id="Letter" name="PaperSize" value="Letter">
-                    <label for="Letter">Letter (8.5 x 11.0 in, $4.99 per pack)</label><br>
-                    <input type="radio" id="Legal" name="PaperSize" value="Legal">
-                    <label for="Legal">Legal (8.5 x 14.0 in, $5.99 per pack)</label><br>
-                    <input type="radio" id="None" name="PaperSize" value="None">
-                    <label for="None">No Paper</label><br>
-                    <br>
-                    <label for="PaperQuantity">Quantity: </label>
-                    <input type="text" id="PaperQuantity" name="PaperQuantity" maxlength="3">
-                </fieldset>
             </fieldset><br>
             <fieldset>
                 <legend>Feedback</legend>

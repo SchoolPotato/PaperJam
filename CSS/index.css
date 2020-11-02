@@ -12,6 +12,14 @@ img#logo{
     margin-right: auto;
 }
 
+img#logo2{
+    max-height: auto;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 table{
     border: double white;
     
@@ -38,9 +46,11 @@ a:visited{
 .flex-container{
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .flex-item{
-    max-width: 33%;
+    max-width: auto;
     height: auto;
     margin: 0.2rem;
     border: 0.2rem lightskyblue solid;
@@ -48,8 +58,61 @@ a:visited{
 
 iframe{
     max-height: auto;
-    max-width: 50%;
+    max-width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+p#WelcomeText{
+    font-size: 150%;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+}
+.video1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.video2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container{
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .video1{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        max-width: 85%;
+        max-height: auto;
+    }
+    .video2{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        max-width: 85%;
+        max-height: auto;
+    }
+    .flex-container{
+        max-width: 95%;
+    }
+    .flex-item{
+        max-width: 45%;
+        max-height: auto;
+    }
+    a#navbar{
+        font-size: 100%;
+    }
 }
